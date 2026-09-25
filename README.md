@@ -423,8 +423,3 @@ Terraform is used to create:
 \## Initialize Terraform
 
 
-
-```bash
-
-terraform init
-
