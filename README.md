@@ -19,24 +19,19 @@ The infrastructure is completely deployed using Terraform Infrastructure as Code
 
 
 \## Architecture
+## Solution Architecture
 
+The following diagram illustrates the complete AWS solution architecture:
 
+![AWS Serverless Image Processing Pipeline Architecture](architecture/architecture.png)
 
-The solution uses Amazon S3, Amazon SQS, AWS Lambda, Amazon DynamoDB and Amazon CloudFront.
+### Architecture Workflow
 
+The workflow is:
 
+User → S3 Source Bucket → SQS → Lambda → S3 Processed Bucket
 
-\### Architecture Flow
-
-
-
-
-
-
-A Dead Letter Queue (DLQ) is used to handle messages that repeatedly fail processing.
-
-
-
+Lambda also stores image metadata in DynamoDB, while CloudFront provides delivery of processed images.
 \---
 
 
