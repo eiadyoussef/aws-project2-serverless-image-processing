@@ -30,45 +30,6 @@ The solution uses Amazon S3, Amazon SQS, AWS Lambda, Amazon DynamoDB and Amazon 
 
 
 
-User uploads an image:
-
-
-
-S3 Source Bucket
-
-&#x20;       |
-
-&#x20;       v
-
-SQS Image Processing Queue
-
-&#x20;       |
-
-&#x20;       v
-
-AWS Lambda
-
-&#x20;       |
-
-&#x20;       +------------------+
-
-&#x20;       |                  |
-
-&#x20;       v                  v
-
-S3 Processed Bucket    DynamoDB
-
-&#x20;       |
-
-&#x20;       v
-
-CloudFront
-
-&#x20;       |
-
-&#x20;       v
-
-End User
 
 
 
