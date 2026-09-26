@@ -18,10 +18,7 @@ The infrastructure is completely deployed using Terraform Infrastructure as Code
 
 
 
-<<<<<<< HEAD
-\## Architecture
-=======
->>>>>>> e9412c6 (Add architecture diagram to README)
+
 ## Solution Architecture
 
 The following diagram illustrates the complete AWS solution architecture:
